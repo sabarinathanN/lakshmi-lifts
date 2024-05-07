@@ -13,16 +13,7 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+
 
 .App-link {
   color: #61dafb;
@@ -35,4 +26,25 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.landing-container {
+  position: relative;
+  /* This makes the parent container a positioning context */
+}
+
+.landing-image {
+  width: 100%;
+  height: auto;
+}
+
+.landing-content {
+  font-size: 40px;
+  position: absolute;
+  top: 50%; /* This centers the content vertically */
+  left: 25%; /* This centers the content horizontally */
+  transform: translate(-50%, -50%); /* This ensures perfect centering */
+  z-index: 10;
+  color:white;
+  text-align: start; /* Centers text */
 }
